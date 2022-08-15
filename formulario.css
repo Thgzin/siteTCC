@@ -41,7 +41,9 @@ a:hover {
   
 }
 
-
+.disable-day{
+  background-color:red;
+}
 
 .logo {
   font-family: 'Poppins', sans-serif;
