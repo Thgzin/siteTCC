@@ -15,6 +15,8 @@
 </head>
 
 <script>
+
+
   function validarEmail(field) {
   usuario = field.value.substring(0, field.value.indexOf("@"));
   dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
@@ -40,6 +42,11 @@
 	var s1 = document.getElementById(s1);
 	var s2 = document.getElementById(s2);
 	s2.innerHTML = "";
+ 
+  var selectedValue = document.getElementById("slct1").value;
+    console.log(selectedValue);
+
+
 	if(s1.value == "Celta"){
 		var optionArray = ["|","2015x|2015","2014x|2014","2013x|2013","2012x|2012","2011x|2011","2010x|2010","2009x|2009"];
 	} else if(s1.value == "Onix"){
@@ -49,6 +56,11 @@
 	} else if(s1.value == "Montana"){
     var optionArray = ["|","2021x|2021","2020x|2020","2019x|2019","2018x|2018","2017x|2017","2016x|2016","2015x|2015","2014x|2014","2013x|2013","2012x|2012","2011x|2011","2010x|2010","2009x|2009"];
   }
+
+  
+
+
+
   
 	for(var option in optionArray){
 		var pair = optionArray[option].split("|");
@@ -83,23 +95,21 @@
 </script>
 
 
-<body>
-
 <body onload="startTime()">
 
   <header>
     <nav>
-      <a class="logo" href="/">Introdução</a>
+      <a class="logo" href="/">Formulário</a>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
     <ul class="nav-list">
-      <li><a href="file:///C:/Users/thgzi/Desktop/TCC/siteTCC/index.html">Início</a></li>
-      <li><a href="file:///C:/Users/thgzi/Desktop/TCC/siteTCC/servicos.html">Serviços</a></li>
-      <li><a href="file:///C:/Users/thgzi/Desktop/TCC/siteTCC/index.html">Sobre</a></li>
-      <li><a href="file:///C:/Users/thgzi/Desktop/TCC/siteTCC/index.html">Contatos</a></li>
+      <li><a href="./index.html">Início</a></li>
+      <li><a href="./servicos.html">Serviços</a></li>
+      <li><a href="./index.html">Sobre</a></li>
+      <li><a href="./index.html">Contatos</a></li>
     </ul>
     </nav>
   </header>
@@ -152,7 +162,7 @@
         
 
 
-        <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+        <select id="slct1" onchange="populate(this.id,'slct2')">
           <option value="" disabled selected>Veiculo</option>
           <option value="Celta">Celta</option>
           <option value="Onix">Onix</option>
@@ -177,7 +187,7 @@
     <div class="input-group">
       <div class="select-box">
         
-        <select>
+        <select id="slct3" name="slct3"> motor
           <option value="" disabled selected>Motor</option>
             <option>1.0 (Celta, Onix)</option>
             <option>1.4 (Onix, Montana)</option>
@@ -191,7 +201,7 @@
     <div class="input-group">
       <div class="select-box">
         
-          <select>
+          <select id="motor">
           <option value="" disabled selected>KM Aproximado</option>
             <option>100.000</option>
             <option>90.000</option>
@@ -269,7 +279,8 @@
   </div>
   <div class="form-step">
     <div class="input-group">
-      <h1>Confirmar envio</h1>
+      <p>Muito bem! Suas informações foram recebidas.</p>
+      <p>Confirmar envio?</p>
      
     </div>
     <div class="btns-group">

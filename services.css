@@ -52,8 +52,8 @@ header{
   
   .logo {
     font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 3px;
   }
   
   nav {
@@ -151,8 +151,9 @@ header{
 
   .texto p{
     color: rgb(255, 255, 255);
-    font-size: 1vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9vw;
+    font-family: 'Sora', sans-serif;
+
     text-align: center;
     text-transform: uppercase;
     font-weight: 700!important;
@@ -167,8 +168,9 @@ header{
 
       .texto2 p{
         color: rgb(255, 255, 255);
-        font-size: 1vw;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.9vw;
+        font-family: 'Sora', sans-serif;
+
         text-align: center;
         text-transform: uppercase;
         font-weight: 700!important;
@@ -184,7 +186,7 @@ header{
       h1{
         color: rgb(255, 255, 255);
         font-size: 2vw;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Sora', sans-serif;
         text-align: center;
         text-transform: uppercase;
         font-weight: 700!important;

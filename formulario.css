@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 *{
 margin: 0;
 padding: 0;
@@ -1240,7 +1241,8 @@ button.green-button{
   
   .text-center {
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Sora', sans-serif;
+
   }
   
   /* Progressbar */
@@ -1278,8 +1280,15 @@ button.green-button{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Sora', sans-serif;
+
   }
-  
+
+  select{
+    font-family: 'Sora', sans-serif;
+
+  }
+
   .progress-step::before {
     counter-increment: step;
     content: counter(step);
@@ -1315,6 +1324,19 @@ button.green-button{
     margin: 2rem 0;
   }
   
+  .input-group p{
+    text-align: center;
+   
+    font-size: 2rem;
+    font-family: 'Sora', sans-serif;
+  }
+  label{
+    font-family: 'Sora', sans-serif;
+font-size: 1em;
+  }
+
+
+
   @keyframes animate {
     from {
       transform: scale(1, 0);
@@ -1344,6 +1366,8 @@ button.green-button{
     cursor: pointer;
     transition: all 200ms linear;
     margin-top: 20px;
+    font-family: 'Sora', sans-serif;
+
   }
   .btn:hover {
     box-shadow: 0 0 0 1px #fff, 0 0 0 2px ;

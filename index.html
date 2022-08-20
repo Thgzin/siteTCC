@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
 
+<!--Titulo, logo e js da pagina-->
+<head>
 <title>Agendamento Online</title>
 <meta charset="utf-8">
-
 <link rel="shortcut icon" href="images/icons8-react-native-48.png"/>
 <link rel="stylesheet" href="styles.css">
 <script src="https://use.fontawesome.com/5cf57e4d73.js"></script>
 <script type="text/javascript" src="introducao.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
 </head>
+<!--Titulo, logo, css, js da pagina-->
 
+
+<!--Corpo da página com script de horário atual-->
 <body onload="startTime()">
+
+
   
 
-
+<!--Cabecalho da página-->
   <header>
     <nav>
       <a class="logo" href="/">Introdução</a>
@@ -28,16 +30,22 @@
         <div class="line3"></div>
       </div>
     <ul class="nav-list">
-      <li><a href="file:///C:/Users/thgzi/Desktop/TCC/siteTCC/index.html">Início</a></li>
-      <li><a href="file:///C:/Users/thgzi/Desktop/TCC/siteTCC/servicos.html">Serviços</a></li>
+      <li><a href="./index.html">Início</a></li>
+      <li><a href="./servicos.html">Serviços</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#contato">Contatos</a></li>
     </ul>
     </nav>
   </header>
-  
-  <script src="javascript.js"></script>
+  <!--Cabecalho da página-->
 
+
+
+  <!--Script do javascript da página-->
+  <script src="javascript.js"></script>
+  <!--Script do javascript da página-->
+
+<!--Parte inicial, textos, imagens e botões-->
 <div id="imagem">
   <div class="texto">
   <p>Precisa realizar algum Reparo ou Manutenção no seu Automóvel?</p>
@@ -54,20 +62,20 @@
 
 
 <div class="button1">
-  <a href="file:///C:/Users/thgzi/Desktop/TCC/siteTCC/formulario.html"><button type="button"><span></span>Começar</button></a>
+  <a href="./formulario.html"><button type="button"><span></span>Começar</button></a>
   </div>
+<!--Parte inicial, textos, imagens e botões-->
 
 
 
 
 
-
-
+<!--Sobre da página com texto e botão-->
 <section id="sobre">
 <div class="about" id="about">
 <h1 class="title1">Sobre Nós</h1> 
 
-<p>Tudo é mais facil quando é online, e uma pessoa conseguir agendar e marcar uma revisão para seu automóvel de qualquer lugar que ela esteja, É melhor ainda.</p>
+<p>Tudo é mais fácil e prático quando é online, com esse pensamento nosso site tem a função de conseguir agendar e marcar uma revisão para seu automóvel de qualquer lugar que você esteja.</p>
 <p>"Um Site com o Objetivo de Agendar uma Revisão para seu Automóvel."
   
 </section>
@@ -78,13 +86,14 @@
 <div class="button2">
 <button type="button"><span></span>Saiba Mais</button>
 </div>
+<!--Sobre da página com texto e botão-->
 
-
+<!--Contato da página com texto e envio do contato com utilização de um script de validação de email-->
 <section id="contato">
   <div class="contactus" id="contactus">
   <h1 class="title">Contato</h1>
 
-  <form action="enviarDuvida.php" method="GET" id="form" onsubmit="return validate()">
+  <form action="forms.php" method="GET" id="form" onsubmit="validate()">
     <div class="form_wrapper">
     <div class="form_input">
       <input type="text" name="name" id="name"   placeholder="Nome Completo" required>
@@ -95,25 +104,18 @@
       <div class="button3">
         <button type="submit" id="button" disabled>Enviar</button>
       </form>
+<!--Contato da página com texto e envio do contato com utilização de um script de validação de email-->
 
-
-      
       </div>
     </div>
-  
     </div>
     </div>
-  
   </section>
-
-
-
 </section>
-
 </div>
 </div>
 
-
+<!--Rodapé da pagina com informações e localização da empresa fictícia-->
 <div class="footer">
 <div class="footer-content">
   <div id="txt"></div>
@@ -145,6 +147,7 @@
 
 </div>
 
+<!--Logo de redes sociais-->
 <div class="footer-bottom">
  
 &copy; Equipe 04 | Serviços Automotivos
@@ -154,10 +157,10 @@
 <i class="fa fa-github-square"></i>
 <i class="fa fa-linkedin"></i>
 <i class="fa fa-instagram"></i>
-
+<!--Logo de redes sociais-->
 </div>
 </div>
-
+<!--Rodapé da pagina com informações e localização da empresa fictícia-->
 
 </body>
 </html>
